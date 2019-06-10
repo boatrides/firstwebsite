@@ -1,0 +1,404 @@
+<!doctype html>
+
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ganga boat tour</title>
+<meta name="description" content="HTML template for multiple tour agency, local agency, traveller, tour hosting based on Twitter Bootstrap 3.x.x" />
+<meta name="keywords" content="tour agency, tour guide, travel, trip, holiday, vocation, relax, adventure, virtual tour, tour planner" />
+<meta name="author" content="crenoveative">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script src="../../../cdn-cgi/apps/head/7qcG4VvvlXlCsskpW4YyDmv4ClE.js"></script><link rel="shortcut icon" href="images/ico/favicon.png">
+
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css'%}" media="screen">
+<link href="{% static 'css/main.css'%}" rel="stylesheet">
+<link href="{%static 'css/plugin.css'%}" rel="stylesheet">
+
+<link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+<link href="{%static 'css/your-style.css'%}" rel="stylesheet">
+</head>
+<body class="home transparent-header">
+
+<div class="container-wrapper">
+
+<header id="header">
+
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function navbar-arrow">
+<div class="container">
+<div class="logo pull-left">
+<a href="index-2.html"><img src="images/logo.png" alt=""></a>
+</div>
+<div id="navbar" class="navbar-nav-wrapper pull-right">
+<ul class="nav navbar-nav" id="responsive-menu">
+<li class="active">
+<a href="{%url 'index'%}">Home</a>
+
+</li>
+<li>
+<a href="#">Pages</a>
+
+
+</li>
+<li><a href="dashboard.html">Dashboard</a>
+
+</li>
+<li><a href="about-us.html">About Us</a>
+
+</li>
+<li>
+<a href="blog-right.html">Blog</a>
+
+</li>
+<li><a href="{% url 'contact'%}">Contact Us</a>
+
+</li>
+</ul>
+</div>
+</div>
+<div id="slicknav-mobile"></div>
+</nav>
+
+</header>
+
+
+<div class="main-wrapper scrollspy-container">
+
+<div class="hero in-banner img-bg-01">
+<div class="breadcrumb">
+<div class="container">
+<ol>
+<li><a href="#">Home</a></li>
+<li class="active">Contact Us One</li>
+</ol>
+</div>
+</div>
+<div class="overlay">
+</div>
+</div>
+
+<section class="main-content">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+
+<div class="row contact-details">
+<div class="col-sm-8">
+<h3>Get In Touch</h3>
+<form id="contact-form" class="contact-form-wrapper" method="post" action="https://cyclonethemes.com/demo/html/cyclone-tour/contact-02.php">
+<div class="messages"></div>
+<div class="row">
+<div class="col-sm-12">
+<div class="form-group">
+<label for="form_name">Your Name <span class="font10 text-danger">(required)</span></label>
+<input id="form_name" type="text" class="form-control" name="name" data-error="Your name is required" required="required">
+<div class="help-block with-errors"></div>
+</div>
+</div>
+<div class="col-sm-12">
+<div class="form-group">
+<label for="form_email">Your Email <span class="font10 text-danger">(required)</span></label>
+<input id="form_email" type="email" class="form-control" name="email" data-error="Your email is required and must be a valid email address" required="required">
+<div class="help-block with-errors"></div>
+</div>
+</div>
+<div class="col-sm-12">
+<div class="form-group">
+<label>Subject</label>
+<input type="text" class="form-control" name="title" />
+</div>
+</div>
+<div class="col-sm-12">
+<div class="form-group">
+<label for="form_message">Message <span class="font10 text-danger">(required)</span></label>
+<textarea id="form_message" class="form-control" name="message" rows="5" data-minlength="50" data-error="Your message is required and must not less than 50 characters" required="required"></textarea>
+<div class="help-block with-errors"></div>
+</div>
+</div>
+<div class="col-sm-12 text-right text-left-xs">
+<button type="submit" class="btn btn-primary mt-5">Send Message</button>
+</div>
+</div>
+</form>
+</div>
+<div class="col-sm-4 col-md-4">
+<h3 class="address-title">Connect With Us</h3>
+<ul class="address-list">
+<li>
+<h5>Address</h5>
+<address> 545, Marina Rd., <br />Mohammed Bin Rashid Boulevard, <br />Dubai 123234 </address>
+</li>
+<li>
+<h5>Email</h5><a href="#"><span class="__cf_email__" data-cfemail="b0dfd6d6d9d3d5f0d3dfddc0d1dec99ed3dfdd">[email&#160;protected]</span></a>
+</li>
+<li>
+<h5>Phone Number</h5><a href="#">1-866-599-6674</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+
+<div class="footer-wrapper scrollspy-footer">
+<footer class="main-footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<h5 class="footer-title">newsletter</h5>
+<p class="font16">Subsribe to get our latest updates and oeffers</p>
+<div class="footer-newsletter">
+<div class="form-group">
+<input class="form-control" placeholder="enter your email " />
+<button class="btn btn-primary">subsribe</button>
+</div>
+<p class="font-italic font13">*** Don't worry, we wont spam you!</p>
+</div>
+</div>
+<div class="col-sm-8">
+<div class="row">
+<div class="col-xs-4 col-sm-3 col-sm-offset-3">
+<h5 class="footer-title">footer</h5>
+<ul class="footer-menu">
+<li><a href="#">Support</a></li>
+<li><a href="#">Advertise</a></li>
+<li><a href="#">Media Relations</a></li>
+<li><a href="#">Affiliates</a></li>
+<li><a href="#">Careers</a></li>
+</ul>
+</div>
+<div class="col-xs-4 col-sm-3">
+<h5 class="footer-title">quick links</h5>
+<ul class="footer-menu">
+<li><a href="#">Media Relations</a></li>
+<li><a href="#">Affiliates</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Advertise</a></li>
+</ul>
+</div>
+<div class="col-xs-4 col-sm-3">
+<h5 class="footer-title">helps</h5>
+<ul class="footer-menu">
+<li><a href="#">Using a Tour</a></li>
+<li><a href="#">Submitting a Tour</a></li>
+<li><a href="#">Managing My Account</a></li>
+<li><a href="#">Merchant Help</a></li>
+<li><a href="#">White Label Website</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<footer class="bottom-footer">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-4">
+<p class="copy-right">&#169; 2017 Cyclone - Tour hosting</p>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<ul class="bottom-footer-menu">
+<li><a href="#">Cookies</a></li>
+<li><a href="#">Policies</a></li>
+<li><a href="#">Terms</a></li>
+<li><a href="#">Blogs</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4">
+<ul class="bottom-footer-menu for-social">
+<li><a href="#"><i class="icon-social-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
+<li><a href="#"><i class="icon-social-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
+<li><a href="#"><i class="icon-social-google" data-toggle="tooltip" data-placement="top" title="google plus"></i></a></li>
+<li><a href="#"><i class="icon-social-instagram" data-toggle="tooltip" data-placement="top" title="instrgram"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</div>
+
+
+<div id="back-to-top">
+<a href="#"><i class="ion-ios-arrow-up"></i></a>
+</div>
+
+
+<div id="loginModal" class="modal fade login-box-wrapper" tabindex="-1" data-width="550" data-backdrop="static" data-keyboard="false" data-replace="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title text-center">Sign-in into your account</h4>
+</div>
+<div class="modal-body">
+<div class="row gap-20">
+<div class="col-sm-6 col-md-6">
+<button class="btn btn-facebook btn-block mb-5-xs">Log-in with Facebook</button>
+</div>
+<div class="col-sm-6 col-md-6">
+<button class="btn btn-google-plus btn-block">Log-in with Google+</button>
+</div>
+<div class="col-md-12">
+<div class="login-modal-or">
+<div><span>or</span></div>
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="form-group">
+<label>Username</label>
+<input class="form-control" placeholder="Min 4 and Max 10 characters" type="text">
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="form-group">
+<label>Password</label>
+<input class="form-control" placeholder="Min 4 and Max 10 characters" type="text">
+</div>
+</div>
+<div class="col-sm-6 col-md-6">
+<div class="checkbox-block">
+<input id="remember_me_checkbox" name="remember_me_checkbox" class="checkbox" value="First Choice" type="checkbox">
+<label class="" for="remember_me_checkbox">Remember me</label>
+</div>
+</div>
+<div class="col-sm-6 col-md-6">
+<div class="login-box-link-action">
+<a data-toggle="modal" href="#forgotPasswordModal" class="block line18 mt-1">Forgot password?</a>
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="login-box-box-action">
+No account? <a data-toggle="modal" href="#registerModal">Register</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer text-center">
+<button type="button" class="btn btn-primary">Log-in</button>
+<button type="button" data-dismiss="modal" class="btn btn-primary btn-border">Close</button>
+</div>
+</div>
+
+
+<div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" data-backdrop="static" data-keyboard="false" data-replace="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title text-center">Create your account for free</h4>
+</div>
+
+<div class="modal-body">
+<div class="row gap-20">
+<div class="col-sm-6 col-md-6">
+<button class="btn btn-facebook btn-block mb-5-xs">Register with Facebook</button>
+</div>
+<div class="col-sm-6 col-md-6">
+<button class="btn btn-google-plus btn-block">Register with Google+</button>
+</div>
+<div class="col-md-12">
+<div class="login-modal-or">
+<div><span>or</span></div>
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="form-group">
+<label>Username</label>
+<input class="form-control" placeholder="Min 4 and Max 10 characters" type="text">
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="form-group">
+<label>Email Address</label>
+<input class="form-control" placeholder="Enter your email address" type="text">
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="form-group">
+<label>Password</label>
+<input class="form-control" placeholder="Min 8 and Max 20 characters" type="text">
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="form-group">
+<label>Password Confirmation</label>
+<input class="form-control" placeholder="Re-type password again" type="text">
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="checkbox-block">
+<input id="register_accept_checkbox" name="register_accept_checkbox" class="checkbox" value="First Choice" type="checkbox">
+<label class="" for="register_accept_checkbox">By register, I read &amp; accept <a href="#">the terms</a></label>
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="login-box-box-action">
+Already have account? <a data-toggle="modal" href="#loginModal">Log-in</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer text-center">
+<button type="button" class="btn btn-primary">Register</button>
+<button type="button" data-dismiss="modal" class="btn btn-primary btn-border">Close</button>
+</div>
+</div>
+
+
+<div id="forgotPasswordModal" class="modal fade login-box-wrapper" tabindex="-1" data-backdrop="static" data-keyboard="false" data-replace="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title text-center">Restore your forgotten password</h4>
+</div>
+<div class="modal-body">
+<div class="row gap-20">
+<div class="col-sm-12 col-md-12">
+<p class="mb-20">Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to.</p>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="form-group">
+<label>Email Address</label>
+<input class="form-control" placeholder="Enter your email address" type="text">
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="checkbox-block">
+<input id="forgot_password_checkbox" name="forgot_password_checkbox" class="checkbox" value="First Choice" type="checkbox">
+<label class="" for="forgot_password_checkbox">Generate new password</label>
+</div>
+</div>
+<div class="col-sm-12 col-md-12">
+<div class="login-box-box-action">
+Return to <a data-toggle="modal" href="#loginModal">Log-in</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer text-center">
+<button type="button" class="btn btn-primary">Restore</button>
+<button type="button" data-dismiss="modal" class="btn btn-primary btn-border">Close</button>
+</div>
+</div>
+
+
+<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{%static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{%static 'js/jquery-migrate-1.4.1.min.js'%}"></script>
+<script src="{%static 'js/core-plugins.js'%}"></script>
+<script src="{%static 'js/customs.js'%}"></script>
+
+<script src="{%static 'js/jquery.flexdatalist.js'%}"></script>
+</body>
+
+<!-- Mirrored from cyclonethemes.com/demo/html/cyclone-tour/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jun 2019 08:05:37 GMT -->
+</html>
